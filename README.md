@@ -111,3 +111,4 @@ If the username and/or the password are wrong the `checklogin.php` will send "Wr
 > 4) Email is sent to user email (or $admin_email if set) with verification link
 > 5) User (or admin) clicks verification link which sends them to `verifyuser.php` and verifies user in the database
 > 6) Verified user may now log in
+# Minimash-Final-Project
