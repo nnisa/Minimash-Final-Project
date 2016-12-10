@@ -16,6 +16,8 @@
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .form input {
+  border-radius: initial;
+  height: 50px;
   font-family: "Roboto", sans-serif;
   outline: 0;
   background: #f2f2f2;
@@ -23,7 +25,7 @@
   border: 0;
   margin: 0 0 15px;
   padding: 15px;
-  box-sizing: border-box;
+ /* box-sizing: border-box;*/
   font-size: 14px;
 }
 
@@ -52,16 +54,17 @@ input#mypassword{
 }
 .form .message {
   margin: 15px 0 0;
-  color: #b3b3b3;
+  color: black;
   font-size: 12px;
 }
 .form .message a {
-  color: #4CAF50;
+  color: #cb2d3e;
   text-decoration: none;
+
 }
-.form .register-form {
+/*.form .register-form {
   display: none;
-}
+}*/
 .container {
   position: relative;
   z-index: 1;
@@ -97,10 +100,10 @@ input#mypassword{
 }
 body {
   background: #cb2d3e; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #cb2d3e, #ef473a);
-  background: -moz-linear-gradient(right, #cb2d3e, #ef473a);
-  background: -o-linear-gradient(right, #cb2d3e, #ef473a);
-  background: linear-gradient(to left, #cb2d3e, #ef473a);
+  background: -webkit-linear-gradient(right, #dddddd, #dddddd);
+  background: -moz-linear-gradient(right, #dddddd, #dddddd);
+  background: -o-linear-gradient(right, #dddddd, #dddddd);
+  background: linear-gradient(to left, #dddddd, #dddddd);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      

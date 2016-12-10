@@ -5,8 +5,6 @@
       session_start();
       session_destroy();
   }
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,36 +17,26 @@
     <link href="../css/main.css" rel="stylesheet" media="screen">
   </head>
 
-  <body>
-    <div class="container">
-
-      <form class="form-signup" id="usersignup" name="usersignup" method="post" action="createuser.php">
-        <h2 class="form-signup-heading">Register</h2>
-        <input name="name" id="name" type="text" class="form-control" placeholder="Name">
-<br>
-        <input name="password" id="password" type="password" class="form-control" placeholder="Password">
-<br>
-		<input name="email" id="email" type="text" class="form-control" placeholder="Email">
-<br>
-		<input name="location" id="location" type="text" class="form-control" placeholder="location">
-<br>
-        <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
-
-        <div id="message"></div>
-		<a href="main_login.php">click here to login</a>
+<body>
+  <div class="signin-page">
+    <div class="form">
+      <form class="register-form" class="form-signup" id="usersignup" name="usersignup" method="post" action="createuser.php">
+        <input name="name" id="name" class="form-control" type="text" class="name" placeholder="name"/>
+        <input type="password" class="password" name="password" id="password" class="form-control" placeholder="password"/>
+        <input name="email" id="email" class="form-control" type="email" class="email" placeholder="email address"/>
+        <input type="text" name="location" id="location" class="form-control" class="location" placeholder="location"/>
+        <button name="Submit" id="submit" class="signup" class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+        <p class="message">Already registered? <a href="main_login.php">Sign In</a></p>
       </form>
+    </div>
+  </div>
 
-    </div> <!-- /container -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-
-    <script src="js/signup.js"></script>
-
-
-    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="//code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="js/signup.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
 <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
 <script>
 
@@ -65,6 +53,5 @@ $( "#usersignup" ).validate({
   }
 });
 </script>
-
   </body>
 </html>
