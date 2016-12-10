@@ -4,6 +4,7 @@ if (isset($_SESSION['email'])) {
     header("location:../index.php");
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,17 +16,20 @@ if (isset($_SESSION['email'])) {
     <link href="../css/main.css" rel="stylesheet" media="screen">
   </head>
 
-  <body>
-    <div class="container">
-      <form class="form-signin" name="form1" method="post" action="checklogin.php">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <input name="myemail" id="myemail" type="text" class="form-control" placeholder="Email" autofocus>
-        <input name="mypassword" id="mypassword" type="password" class="form-control" placeholder="Password">
-        <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        <div id="message"></div>
-		    <a href="signup.php">or sign up here</a>
+
+<body>
+  <div class="signin-page">
+    <div class="form">
+      <form class="login-form" class="form-signin" id="myemail" class="email-2" type="text" class="form-control" name="form1" method="post" action="checklogin.php">
+        <input type="mtemail" class="email-2" placeholder="email"/>
+        <input type="password" name="mypassword" id="mypassword" class="form-control" class="password-2" placeholder="password"/>
+
+        <button name="Submit" class="sign-in" id="submit" class="btn btn-lg btn-primary btn-block" type="submit" >Sign In</button>
+        <p class="message">Not registered? <a href="signup.php">Create an account</a></p>
+
       </form>
-    </div> <!-- /container -->
+    </div>
+  </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-2.2.4.min.js"></script>
@@ -33,6 +37,7 @@ if (isset($_SESSION['email'])) {
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <!-- The AJAX login script -->
     <script src="js/login.js"></script>
-
+<!-- <script type="text/javascript" src="script.js"></script> 
+ --></body>
   </body>
 </html>
