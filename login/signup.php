@@ -22,8 +22,8 @@
     <div class="form">
       <form class="register-form" class="form-signup" id="usersignup" name="usersignup" method="post" action="createuser.php">
         <input name="name" id="name" class="form-control" type="text" class="name" placeholder="name"/>
-        <input type="password" class="password" name="password" id="password" class="form-control" placeholder="password"/>
         <input name="email" id="email" class="form-control" type="email" class="email" placeholder="email address"/>
+        <input type="password" class="password" name="password" id="password" class="form-control" placeholder="password"/>
         <input type="text" name="location" id="location" class="form-control" class="location" placeholder="location"/>
         <button name="Submit" id="submit" class="signup" class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
         <p class="message">Already registered? <a href="main_login.php">Sign In</a></p>

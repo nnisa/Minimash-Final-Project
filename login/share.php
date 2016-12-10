@@ -17,13 +17,12 @@
       <form class="form-signup" id="share" name="share" method="post" action="createfood.php">
         <h2 class="form-signup-heading">We love sharing too!</h2>
         <input name="what" id="what" type="text" class="form-control" placeholder="What are you sharing today?">
-<br>
-		<input name="quantity" id="quantity" type="text" class="form-control" placeholder="How much do you want to share?">
-<br>
-		<input name="location" id="location" type="text" class="form-control" placeholder="location">
-<br>
+        <br>
+		    <input name="quantity" id="quantity" type="text" class="form-control" placeholder="How much do you want to share?">
+        <br>
+		    <input name="location" id="location" type="text" class="form-control" placeholder="location">
+        <br>
         <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Share</button>
-
         <div id="message"></div>
       </form>
 		
