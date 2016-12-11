@@ -1,19 +1,23 @@
 <?php
 class NewFoodForm extends DbConn
 {
-    public function createFood($uid, $memberEmail, $item, $quantity, $address)
+    public function createFood($uid, $memberEmail, $item, $quantity, $neighborhood, $foodtype, $address, $pickupTime
     {
         try {
 
             $db = new DbConn;
             // prepare sql and bind parameters
-            $stmt = $db->conn->prepare("INSERT INTO food (id, memberEmail, item, quantity, address)
-            VALUES (:id, :memberEmail, :item, :quantity, :address)");
+            $stmt = $db->conn->prepare("INSERT INTO food (id, memberEmail, item, quantity, neighborhood, foodtype,address, pickupTime)
+            VALUES (:id, :memberEmail, :item, :quantity, :neighborhood, :foodtype, :address, :pickupTime)");
             $stmt->bindParam(':id', $uid);
             $stmt->bindParam(':memberEmail', $memberEmail);
             $stmt->bindParam(':item', $item);
             $stmt->bindParam(':quantity', $quantity);
+            $stmt->bindParam(':neighborhood', $neighborhood);
+            $stmt->bindParam(':foodtype', $foodtype);
+            $stmt->bindParam(':quantity', $quantity);
             $stmt->bindParam(':address', $address);
+            $stmt->bindParam(':pickupTime', $pickupTime);
             $stmt->execute();
 
             $err = '';

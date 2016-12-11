@@ -66,8 +66,8 @@ $response = $a->retrieve();
     <div class="container">
       <div class="form-signin">
         <!-- <div id="success-info" class="alert alert-success">You have been <strong>successfully logged in</strong></div> -->
-<!-- 		    <a href="share.php" class="btn btn-default btn-lg btn-block" class ="share-button" >Share</a>
- -->    		
+		    <a href="share.php" class="btn btn-default btn-lg btn-block" class ="share-button" >Share</a>
+    		
     		<table style="width:100%">
     		  <tr>
     			<th>Item</th>
