@@ -1,5 +1,4 @@
-
-
+<?PHP require "./login/loginheader.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,8 +23,8 @@
   <link rel="stylesheet" href="css/hover-min.css">
 	<link rel="stylesheet" href="css/style.css">
 
-  	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
 
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -69,7 +68,14 @@
         <li><a href="#feature" class="smoothScroll">About</a></li>
         <li><a href="#gallery" class="smoothScroll">Neighborhood</a></li>
         <li><a href="#contact" class="smoothScroll">Share</a></li>
-        <li><a href="login/main_login.php" class="smoothScroll">Sign in</a></li>
+			<?PHP
+			if (isset($_SESSION['email'])) {
+				echo '        <li><a href="http://localhost/login/logout.php" class="smoothScroll">Sign out</a></li>';
+			} else {
+				echo '        <li><a href="http://localhost/login/main_login.php" class="smoothScroll">Sign in</a></li>';
+			}
+			?>
+
       </ul>
     </div>
   </div>
@@ -144,99 +150,99 @@
 
             		<ul class="filter-wrapper clearfix">
                         <li><a href="#" data-filter="*" class="selected opc-main-bg">All</a></li>
-                        <li><a href="#" class="opc-main-bg" data-filter=".breakfast">Breakfast</a></li>
-                        <li><a href="#" class="opc-main-bg" data-filter=".pizza">Pizza</a></li>
-                        <li><a href="#" class="opc-main-bg" data-filter=".lunch">Lunch</a></li>
-                        <li><a href="#" class="opc-main-bg" data-filter=".dinner">Dinner</a></li>
+                        <li><a href="#" class="opc-main-bg" data-filter=".Vegetables">Vegetables</a></li>
+                        <li><a href="#" class="opc-main-bg" data-filter=".Fruits">Fruits</a></li>
+                        <li><a href="#" class="opc-main-bg" data-filter=".Meat">Dairy</a></li>
+                        <li><a href="#" class="opc-main-bg" data-filter=".Dairy">Meat</a></li>
                     </ul>
 
                     <!-- iso box section -->
-                    <div class="iso-box-section wow fadeInUp" data-wow-delay="0.9s">
-                      <div class="iso-box-wrapper col4-iso-box">
+                     <div class="iso-box-section wow fadeInUp" data-wow-delay="0.9s">
+                     <div class="iso-box-wrapper col4-iso-box">
 
-                        <div class="iso-box breakfast pizza lunch col-md-4 col-sm-6">
+                     <a href="http://localhost/login/index.php">
+                        <div class="iso-box Vegetables Fruits Meat col-md-4 col-sm-6">
                           <div class="gallery-thumb">
-                            <a href="images/gallery-img1.jpg" data-lightbox-gallery="food-gallery">
                               <img src="images/gallery-img1.jpg" class="fluid-img" alt="Gallery">
                                 <div class="gallery-overlay">
                                   <div class="gallery-item">
                                     <i class="fa fa-search"></i>
                                   </div>
                                 </div>
-                            </a>
                           </div>
                           <h3>West Village</h3>
                         </div>
+                        </a>
 
-                        <div class="iso-box breakfast lunch dinner col-md-4 col-sm-6">
+                        <a href="http://localhost/login/index.php">
+                        <div class="iso-box Vegetables Meat Dairy col-md-4 col-sm-6">
                           <div class="gallery-thumb">
-                            <a href="images/gallery-img2.jpg" data-lightbox-gallery="food-gallery">
                               <img src="images/gallery-img2.jpg" class="fluid-img" alt="Gallery">
                                 <div class="gallery-overlay">
                                   <div class="gallery-item">
                                     <i class="fa fa-search"></i>
                                   </div>
                                 </div>
-                            </a>
                           </div>
                           <h3>Upper West Side</h3>
                         </div>
+                        </a>
 
-                        <div class="iso-box dinner col-md-4 col-sm-6">
+                        <a href="http://localhost/login/index.php">
+                        <div class="iso-box Dairy col-md-4 col-sm-6">
                           <div class="gallery-thumb">
-                            <a href="images/gallery-img3.jpg" data-lightbox-gallery="food-gallery">
                               <img src="images/gallery-img3.jpg" class="fluid-img" alt="Gallery">
                                 <div class="gallery-overlay">
                                   <div class="gallery-item">
                                     <i class="fa fa-search"></i>
                                   </div>
                                 </div>
-                            </a>
                           </div>
                           <h3>Upper East Side</h3>
                         </div>
+                        </a>
 
-                        <div class="iso-box breakfast col-md-4 col-sm-6">
+                        <a href="http://localhost/login/index.php">
+                        <div class="iso-box Vegetables col-md-4 col-sm-6">
                           <div class="gallery-thumb">
-                            <a href="images/gallery-img4.jpg" data-lightbox-gallery="food-gallery">
                               <img src="images/gallery-img4.jpg" class="fluid-img" alt="Gallery">
                                 <div class="gallery-overlay">
                                   <div class="gallery-item">
                                     <i class="fa fa-search"></i>
                                   </div>
                                 </div>
-                            </a>
                           </div>
                           <h3>Tribeca</h3>
                         </div>
+                        </a>
 
-                        <div class="iso-box lunch col-md-4 col-sm-6">
+                        <a href="http://localhost/login/index.php">
+                        <div class="iso-box Meat col-md-4 col-sm-6">
                           <div class="gallery-thumb">
-                            <a href="images/gallery-img5.jpg" data-lightbox-gallery="food-gallery">
                               <img src="images/gallery-img5.jpg" class="fluid-img" alt="Gallery">
                                 <div class="gallery-overlay">
                                   <div class="gallery-item">
                                     <i class="fa fa-search"></i>
                                   </div>
                                 </div>
-                            </a>
                           </div>
                           <h3>Soho</h3>
                         </div>
+                        </a>
 
-                        <div class="iso-box pizza lunch col-md-4 col-sm-6">
+                        <a href="http://localhost/login/index.php">
+                        <div class="iso-box Fruits Meat col-md-4 col-sm-6">
                           <div class="gallery-thumb">
-                            <a href="images/gallery-img6.jpg" data-lightbox-gallery="food-gallery">
                               <img src="images/gallery-img6.jpg" class="fluid-img" alt="Gallery">
                                 <div class="gallery-overlay">
                                   <div class="gallery-item">
                                     <i class="fa fa-search"></i>
                                   </div>
                                 </div>
-                            </a>
-                          </div>
+                              </div>
                           <h3>Midtown</h3>
                         </div>
+                        </a>
 
                        </div>
                     </div>
@@ -253,19 +259,35 @@
   <div class="overlay"></div>
 	<div class="container">
 		<div class="row">
-
 			<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
             <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
                 <h2>Share</h2>
                 <h4>we love to share too!</h4>
             </div>
 				<div class="contact-form wow fadeInUp" data-wow-delay="0.7s">
-
-					<form id="contact-form" class="form-signup" id="share" name="share" method="post" action="createfood.php">
-						<input name="name" id="what" type="text" class="form-control" placeholder="What are you sharing today?" required>
+					<form id="contact-form" class="form-signup" id="share" name="share" method="post" action="login/createfood.php">
+						<input name="what" id="what" type="text" class="form-control" placeholder="What are you sharing today?" required>
 						<input name="quantity" type="text" id="quantity" class="form-control" placeholder="What is the quantity?" required>
+            <input list="neighborhoods" name="neighborhood" class="form-control" id="neighborhood" placeholder="Pick your neighborhood" required>
+              <datalist id="neighborhoods">
+                <option value="West Village">
+                <option value="Upper West Side">
+                <option value="Upper East Side">
+                <option value="Tribeca">
+                <option value="Soho">
+                <option value="Midtown">
+              </datalist>
+              <input list="foodtypes" name="foodtype" class="form-control" id="foodtype" placeholder="Pick your food type" required>
+              <datalist id="foodtypes">
+                <option value="Vegetables">
+                <option value="Fruits">
+                <option value="Dairy">
+                <option value="Meat">
+              </datalist>
             <input name="location" id="location" type="text" class="form-control" placeholder="What is the pick up location?" required>
-            <input name="time" id="time" type="text" class="form-control" placeholder="What is the pick up time?" required>
+
+            <input name="pickupTime" id="pickupTime" type="text" class="form-control" placeholder="What is the pick up time?" required>
+            
 						<input type="submit" id="submit" class="form-control submit" class="btn btn-lg btn-primary btn-block" value="SHARE TODAY">
 <!--        <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Share</button>
  -->			</form>
@@ -280,15 +302,12 @@
 <section id="copyright">
   <div class="container">
     <div class="row">
-
       <div class="col-md-8 col-sm-8 col-xs-8">
         <p>Copyright © 2016 minimash<a class="designed-by" href="https://plus.google.com/+Tooplate/" target="_blank"></a></p>
       </div>  
-
       <div class="col-md-4 col-sm-4 text-right">
         <a href="#home" class="fa fa-angle-up smoothScroll gototop"></a>
       </div>
-
     </div>
   </div>
 </section>

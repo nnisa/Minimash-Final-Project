@@ -1,7 +1,7 @@
 <?php
 class NewFoodForm extends DbConn
 {
-    public function createFood($uid, $memberEmail, $item, $quantity, $neighborhood, $foodtype, $address, $pickupTime
+    public function createFood($uid, $memberEmail, $item, $quantity, $neighborhood, $foodtype, $address, $pickupTime)
     {
         try {
 
@@ -15,7 +15,6 @@ class NewFoodForm extends DbConn
             $stmt->bindParam(':quantity', $quantity);
             $stmt->bindParam(':neighborhood', $neighborhood);
             $stmt->bindParam(':foodtype', $foodtype);
-            $stmt->bindParam(':quantity', $quantity);
             $stmt->bindParam(':address', $address);
             $stmt->bindParam(':pickupTime', $pickupTime);
             $stmt->execute();

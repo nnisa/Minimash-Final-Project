@@ -54,7 +54,13 @@ $response = $a->retrieve();
             <li><a href="http://localhost/home.html#feature" class="smoothScroll">About</a></li>
             <li><a href="http://localhost/home.html#gallery" class="smoothScroll">Neighborhood</a></li>
             <li><a href="http://localhost/home.html#contact" class="smoothScroll">Share</a></li>
-            <li><a href="http://localhost/login/main_login.php" class="smoothScroll">Sign in</a></li>
+			<?PHP
+			if (isset($_SESSION['email'])) {
+				echo '<li><a href="http://localhost/login/logout.php" class="smoothScroll">Sign out</a></li>';
+			} else {
+				echo '<li><a href="http://localhost/login/main_login.php" class="smoothScroll">Sign in</a></li>';
+			}
+			?>
           </ul>
         </div>
       </div>
@@ -66,13 +72,14 @@ $response = $a->retrieve();
     <div class="container">
       <div class="form-signin">
         <!-- <div id="success-info" class="alert alert-success">You have been <strong>successfully logged in</strong></div> -->
-		    <a href="share.php" class="btn btn-default btn-lg btn-block" class ="share-button" >Share</a>
-    		
+<!-- 		    <a href="share.php" class="btn btn-default btn-lg btn-block" class ="share-button" >Share</a>
+ -->    		
     		<table style="width:100%">
     		  <tr>
     			<th>Item</th>
     			<th>Quantity</th> 
-    			<th>Address</th>
+    			<th>Pick up address</th>
+          <th>Pick up time</th>
     		  </tr>
     		  <?php echo $response; ?>
     		</table>

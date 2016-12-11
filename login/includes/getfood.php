@@ -29,6 +29,7 @@ class GetFood extends DbConn
 				<td>'.$food['item'].'</td>
 				<td>'.$food['quantity'].'</td> 
 				<td>'.$food['address'].'</td>
+                <td>'.$food['pickupTime'].'</td>
 				<td><a href="claimfood.php?id='.$food['id'].'" class="btn btn-default btn-block">Claim</a></td>
 			</tr>';
 		}
