@@ -20,8 +20,11 @@ class GetFood extends DbConn
         $stmt = $db->conn->prepare("SELECT * FROM food");
         $stmt->execute();
 		$foods = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 		
 		$result='';
+
+
 
         foreach($foods as $food) {
 			$result.='
@@ -30,7 +33,8 @@ class GetFood extends DbConn
 				<td>'.$food['quantity'].'</td> 
 				<td>'.$food['address'].'</td>
                 <td>'.$food['pickupTime'].'</td>
-				<td><a href="claimfood.php?id='.$food['id'].'" class="btn btn-default btn-block">Claim</a></td>
+				<td><a href= "mailto:" + '.$food['memberEmail'].' + "?Subject=Hello%20again" target="_top"" class="btn btn-default btn-block email-owner">Claim</a></td>
+
 			</tr>';
 		}
 

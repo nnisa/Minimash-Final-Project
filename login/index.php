@@ -50,10 +50,10 @@ $response = $a->retrieve();
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://localhost/home.html#home" class="smoothScroll">Home</a></li>
-            <li><a href="http://localhost/home.html#feature" class="smoothScroll">About</a></li>
-            <li><a href="http://localhost/home.html#gallery" class="smoothScroll">Neighborhood</a></li>
-            <li><a href="http://localhost/home.html#contact" class="smoothScroll">Share</a></li>
+            <li><a href="http://localhost/home.php#home" class="smoothScroll">Home</a></li>
+            <li><a href="http://localhost/home.php#feature" class="smoothScroll">About</a></li>
+            <li><a href="http://localhost/home.php#gallery" class="smoothScroll">Neighborhood</a></li>
+            <li><a href="http://localhost/home.php#contact" class="smoothScroll">Share</a></li>
 			<?PHP
 			if (isset($_SESSION['email'])) {
 				echo '<li><a href="http://localhost/login/logout.php" class="smoothScroll">Sign out</a></li>';
@@ -84,7 +84,7 @@ $response = $a->retrieve();
     		  <?php echo $response; ?>
     		</table>
 <!--         <a href="logout.php" class="btn btn-default btn-lg btn-block">Logout</a>
- -->      </div>
+ -->    </div>
     </div> <!-- /container -->
   </body>
 </html>

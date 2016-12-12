@@ -25,9 +25,7 @@
         <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Share</button>
         <div id="message"></div>
       </form>
-		
-        <a href="index.php" class="btn btn-default btn-lg btn-block">Go back</a>
-      </div>
+		  </div>
     </div> <!-- /container -->
   </body>
 </html>

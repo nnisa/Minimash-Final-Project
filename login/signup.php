@@ -53,10 +53,10 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://localhost/home.html#home" class="smoothScroll">Home</a></li>
-          <li><a href="http://localhost/home.html#feature" class="smoothScroll">About</a></li>
-          <li><a href="http://localhost/home.html#gallery" class="smoothScroll">Neighborhood</a></li>
-          <li><a href="http://localhost/home.html#contact" class="smoothScroll">Share</a></li>
+          <li><a href="http://localhost/home.php#home" class="smoothScroll">Home</a></li>
+          <li><a href="http://localhost/home.php#feature" class="smoothScroll">About</a></li>
+          <li><a href="http://localhost/home.php#gallery" class="smoothScroll">Neighborhood</a></li>
+          <li><a href="http://localhost/home.php#contact" class="smoothScroll">Share</a></li>
           <li><a href="http://localhost/login/main_login.php" class="smoothScroll">Sign in</a></li>
         </ul>
       </div>

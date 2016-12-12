@@ -1,5 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+
+a.btn.btn-default.btn-block.email-owner:active {
+  background:olive;
+}
+
+a.btn.btn-default.btn-block.email-owner:pressed {
+  background:olive;
+}
+
+td {
+    text-align: center;
+    background: white;
+    /* width: 1%; */
+    font-size: 15px;
+}
+
 .signin-page {
   width: 360px;
   padding: 8% 0 0;
