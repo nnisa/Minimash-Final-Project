@@ -33,8 +33,7 @@ class GetFood extends DbConn
 				<td>'.$food['quantity'].'</td> 
 				<td>'.$food['address'].'</td>
                 <td>'.$food['pickupTime'].'</td>
-				<td><a href= "mailto:" + '.$food['memberEmail'].' + "?Subject=Hello%20again" target="_top"" class="btn btn-default btn-block email-owner">Claim</a></td>
-
+				<td><a href="mailto:'.$food['memberEmail'].'?Subject=Hey%20there" target="_top" class="btn btn-default btn-block email-owner">Claim</a></td>
 			</tr>';
 		}
 
