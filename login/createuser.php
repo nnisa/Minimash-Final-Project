@@ -31,6 +31,8 @@ if (strlen($pw1) < 4) {
         //Success
         if ($response == 'true') {
             echo '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>'. $signupthanks .'</div><div id="returnVal" style="display:none;">true</div>';
+
+            echo '<meta http-equiv="refresh" content="0; URL=\'http://new-website.com\'" />';
         } else {
             //Failure
             mySqlErrors($response);
@@ -40,3 +42,9 @@ if (strlen($pw1) < 4) {
         echo 'An error occurred on the form... try again';
     }
 };
+
+
+
+
+
+
